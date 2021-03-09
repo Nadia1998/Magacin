@@ -3,7 +3,7 @@ package artikal;
 import java.util.Date;
 
 public class KucnaHemija extends Artikal {
-	
+
 	private Date rokTrajanja;
 
 	public Date getRokTrajanja() {
@@ -11,18 +11,14 @@ public class KucnaHemija extends Artikal {
 	}
 
 	public void setRokTrajanja(Date rokTrajanja) {
-		if(rokTrajanja==null) 
+		if (rokTrajanja == null)
 			throw new RuntimeException("Datum ne moze biti null vrednost!");
 		this.rokTrajanja = rokTrajanja;
 	}
 
 	@Override
 	public String toString() {
-		return "Kucna hemija: "+super.toString()+" [rokTrajanja=" + rokTrajanja + "]";
+		return "Kucna hemija: " + super.toString() + " [rokTrajanja=" + rokTrajanja + "]";
 	}
-	
-	
-	
-	
 
 }
